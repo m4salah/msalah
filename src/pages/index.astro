@@ -1,5 +1,4 @@
 ---
-import Card from "@components/Card";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Hr from "@components/Hr.astro";
@@ -8,7 +7,6 @@ import Socials from "@components/Socials.astro";
 import { SOCIALS } from "@config";
 import Layout from "@layouts/Layout.astro";
 import getSortedPosts from "@utils/getSortedPosts";
-import slugify from "@utils/slugify";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
@@ -65,7 +63,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <Hr />
 
-    {
+    <!-- {
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
@@ -111,7 +109,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           </svg>
         </LinkButton>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <Footer />
