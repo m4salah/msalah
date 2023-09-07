@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Mohamed A. Salah",
   desc: "My digital garden",
   title: "Mohamed A. Salah",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "http://www.catb.org/hacker-emblem/glider.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
