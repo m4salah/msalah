@@ -50,3 +50,6 @@ window
     themeValue = isDark ? "dark" : "light";
     setPreference();
   });
+
+// sync with view transition
+document.addEventListener("astro:after-swap", setPreference);
