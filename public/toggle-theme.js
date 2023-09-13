@@ -52,4 +52,4 @@ window
   });
 
 // sync with view transition
-document.addEventListener("astro:after-swap", setPreference());
+document.addEventListener("astro:after-swap", () => setPreference());
